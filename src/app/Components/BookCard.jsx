@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 
 const BookCard = ({ book }) => {
-    console.log(book);
     return (
         <div className='shadow p-7'>
             <Image
@@ -14,7 +13,8 @@ const BookCard = ({ book }) => {
                 className='rounded-lg mb-3 object-cover'
             />
             <h1 className='text-lg font-semibold text-gray-800'>{book.title}</h1>
-            <Link href={'/bookdetails'}>
+            
+            <Link href={`/all-books/${book.id}`}>
                 <button className='btn w-full btn-info rounded-xl text-gray-800'>View Details</button>
             </Link>
         </div>

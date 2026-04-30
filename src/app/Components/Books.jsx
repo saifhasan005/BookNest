@@ -8,7 +8,7 @@ const Books = async () => {
     return (
         <div className='container mx-auto mt-[40px]'>
             <h1 className='text-center font-semibold text-cyan-600 text-3xl'>Featured Books</h1>
-            <div className='grid gap-10 place-items-center grid-cols-4 mt-[25px] '>
+            <div className='grid gap-10 place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-[25px] '>
                 {topBooks.map((book) => (
                     <BookCard book={book} key={book.id} />
                 ))}

@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "The Alchemist",
+    "price" : 40,
     "author": "Paulo Coelho",
     "description": "A philosophical story about following your dreams.",
     "category": "Story",
@@ -11,6 +12,7 @@
   {
     "id": 2,
     "title": "Atomic Habits",
+    "price" : 80,
     "author": "James Clear",
     "description": "A guide to building good habits and breaking bad ones.",
     "category": "Science",
@@ -20,6 +22,7 @@
  {
     "id": 3,
     "title": "The Kite Runner",
+    "price" : 70,
     "author": "Khaled Hosseini",
     "description": "A powerful story of friendship and redemption.",
     "category": "Story",
@@ -29,6 +32,7 @@
   {
     "id": 4,
     "title": "Think and Grow Rich",
+    "price" : 90,
     "author": "Napoleon Hill",
     "description": "Classic book on success and personal development.",
     "category": "Science",
@@ -38,6 +42,7 @@
     {
     "id": 5,
     "title": "The Subtle Art of Not Giving a F*ck",
+    "price" : 50,
     "author": "Mark Manson",
     "description": "A counterintuitive approach to living a good life.",
     "category": "Story",
@@ -47,6 +52,7 @@
   {
     "id": 6,
     "title": "Clean Code",
+    "price" : 180,
     "author": "Robert C. Martin",
     "description": "A handbook of agile software craftsmanship.",
     "category": "Tech",
@@ -56,6 +62,7 @@
   {
     "id": 7,
     "title": "You Don't Know JS",
+    "price" : 70,
     "author": "Kyle Simpson",
     "description": "Deep dive into JavaScript core concepts.",
     "category": "Tech",
@@ -65,6 +72,7 @@
   {
     "id": 8,
     "title": "A Brief History of Time",
+    "price" : 100,
     "author": "Stephen Hawking",
     "description": "Understanding the universe and time.",
     "category": "Science",
@@ -74,6 +82,7 @@
   {
     "id": 9,
     "title": "The Power of Habit",
+    "price" : 120,
     "author": "Charles Duhigg",
     "description": "Why habits exist and how to change them.",
     "category": "Science",
@@ -83,6 +92,7 @@
   {
     "id": 10,
     "title": "Rich Dad Poor Dad",
+    "price" : 200,
     "author": "Robert Kiyosaki",
     "description": "Financial education and mindset.",
     "category": "Science",
@@ -92,6 +102,7 @@
   {
     "id": 11,
     "title": "Deep Work",
+    "price" : 90,
     "author": "Cal Newport",
     "description": "Rules for focused success in a distracted world.",
     "category": "Tech",
@@ -101,6 +112,7 @@
   {
     "id": 12,
     "title": "Zero to One",
+    "price" : 110,
     "author": "Peter Thiel",
     "description": "Startup thinking and innovation.",
     "category": "Tech",
