@@ -2,7 +2,7 @@ import Image from "next/image";
 import BookCard from "../Components/BookCard";
 
 const AllBooksPage = async () => {
-    const res = await fetch('http://localhost:3000/data.json',{cache: 'no-store'})
+    const res = await fetch('https://book-nest-rho-five.vercel.app/data.json',{cache: 'no-store'})
     const books = await res.json();
     console.log(books);
     return (
