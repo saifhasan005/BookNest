@@ -31,8 +31,8 @@ const Services = () => {
     return (
         <section className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
             <div className='text-center mb-10'>
-                <h2 className='text-3xl font-bold text-gray-800'>Why Choose BookNest?</h2>
-                <p className='text-gray-500 mt-2'>We make your book buying experience simple and enjoyable</p>
+                <h2 className='text-3xl font-bold text-gray-800 dark:text-white'>Why Choose BookNest?</h2>
+                <p className='text-gray-500 mt-2 dark:text-white'>We make your book buying experience simple and enjoyable</p>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {services.map(service => (

@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-    data-theme="light"
+    data-theme="dark"
       lang="en"
       className={`${OutfitFont.className} h-full antialiased`}
     >

@@ -23,7 +23,7 @@ const Navbar = () => {
                     <ul className='hidden md:flex font-medium text-lg gap-3'>
                         {navLinks.map((link) => (
                             <Link key={link.href} href={link.href}
-                                className={`pb-1 ${pathname === link.href ? 'border-b-2 border-blue-500' : ''}`}>
+                                className={`pb-1 dark:text-black ${pathname === link.href ? 'border-b-2 border-blue-500' : ''}`}>
                                 <li>{link.label}</li>
                             </Link>
                         ))}
