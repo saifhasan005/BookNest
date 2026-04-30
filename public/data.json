@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A philosophical story about following your dreams.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A guide to building good habits and breaking bad ones.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+  },
+ {
+    "id": 3,
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "description": "A powerful story of friendship and redemption.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "description": "Classic book on success and personal development.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+  },
+    {
+    "id": 5,
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "description": "A counterintuitive approach to living a good life.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+  },
+  {
+    "id": 7,
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
+    "description": "Deep dive into JavaScript core concepts.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781491904244-L.jpg"
+  },
+  {
+    "id": 8,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "Understanding the universe and time.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780553380163-L.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "description": "Why habits exist and how to change them.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780812981605-L.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "Financial education and mindset.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "description": "Rules for focused success in a distracted world.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "description": "Startup thinking and innovation.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/isbn/9780804139298-L.jpg"
+  }
+]
