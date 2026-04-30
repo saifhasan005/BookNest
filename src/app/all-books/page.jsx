@@ -1,18 +1,15 @@
 import Image from "next/image";
+import BookCard from "../Components/BookCard";
 
 const AllBooksPage = async () => {
     const res = await fetch('http://localhost:3000/data.json')
     const books = await res.json();
+    console.log(books);
     return (
-        <div>
-            <Image
-                src={books.image_url}
-                alt={books.title}
-                width={150}
-                height={200}
-                className='rounded-lg mb-3 object-cover'
-            />
-            <p>{books.title}</p>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 items-stretch'>
+            {books.map(book => (
+                <BookCard key={book.id} book={book} />
+            ))}
         </div>
     );
 };

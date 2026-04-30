@@ -59,16 +59,16 @@
     "available_quantity": 5,
     "image_url": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
   },
-  {
-    "id": 7,
-    "title": "You Don't Know JS",
-    "price" : 70,
-    "author": "Kyle Simpson",
-    "description": "Deep dive into JavaScript core concepts.",
-    "category": "Tech",
-    "available_quantity": 6,
-    "image_url": "https://covers.openlibrary.org/b/isbn/9781491904244-L.jpg"
-  },
+ {
+        "id": 7,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "price": 12,
+        "available_quantity": 10,
+        "category": "Fiction",
+        "description": "A story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, set in the Jazz Age on Long Island.",
+        "image_url": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+    },
   {
     "id": 8,
     "title": "A Brief History of Time",

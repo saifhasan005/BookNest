@@ -14,7 +14,7 @@ const BannerFooter = () => {
     return (
          <div className=' mt-[35px] flex justify-between items-center bg-gray-200 gap-4 py-4 px-2 container mx-auto'>
             <button className='btn bg-cyan-400 dark:text-white'>Latest Books</button>
-            <Marquee pauseOnHover={true}>
+            <Marquee speed={180} pauseOnHover={true}>
                 {news.map(n=>{
                    return <span className='dark: text-black' key={n.id}>{n.title}  <span>🌟</span> </span>
     

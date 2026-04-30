@@ -1,6 +1,10 @@
 import { Outfit, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
+import { ToastContainer } from "react-toastify";
+import Footer from "./Components/Footer";
+import Services from "./Components/Service";
+import ContactPage from "./Components/ContactPage";
 
 const OutfitFont = Outfit({
   variable: "--font-geist-sans",
@@ -24,7 +28,11 @@ export default function RootLayout({ children }) {
         <Navbar/>
         <main>
           {children}
+          <ToastContainer/>
         </main>
+        <Services/>
+        <ContactPage/>
+        <Footer/>
       </body>
     </html>
   );
