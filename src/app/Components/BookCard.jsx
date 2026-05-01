@@ -6,7 +6,6 @@ import { useSpring, animated } from '@react-spring/web';
 
 const BookCard = ({ book }) => {
     const [hovered, setHovered] = useState(false);
-
     const springs = useSpring({
         scale: hovered ? 1.04 : 1,
         boxShadow: hovered
@@ -14,7 +13,6 @@ const BookCard = ({ book }) => {
             : '0 2px 10px rgba(0,0,0,0.08)',
         config: { tension: 300, friction: 20 }
     });
-
     return (
         <animated.div
             style={springs}
