@@ -1,4 +1,5 @@
 // CategorySidebar.jsx
+import Link from 'next/link';
 import React from 'react';
 
 const CategorySidebar = async () => {
@@ -7,12 +8,12 @@ const CategorySidebar = async () => {
   return (
     <div className="flex flex-wrap gap-2 mb-6">
       {category.map(singleCategory => (
-        <button 
+        <Link key={singleCategory.id} href={`?category=${singleCategory.name.toLowerCase()}`}><button 
           className='btn btn-info w-[130px]' 
-          key={singleCategory.id}
+          
         >
           {singleCategory.name}
-        </button>
+        </button></Link>
       ))}
     </div>
   );

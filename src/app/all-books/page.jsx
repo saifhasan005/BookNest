@@ -1,11 +1,11 @@
 import BookCard from "../Components/BookCard";
 import CategorySidebar from "../Components/CategorySidebar";
 
-const AllBooksPage = async () => {
+const AllBooksPage = async ({searchParams}) => {
+    const {category} = await searchParams;
     const res = await fetch('http://localhost:3000/data.json', { cache: 'no-store' })
     const books = await res.json();
-
-
+    const filteredBooks = category ? books.filter(book => book.category.toLowerCase() == category.toLowerCase()) : books
     return (
         <div className="container mx-auto p-6">
             <div className="flex gap-2 mb-6">
@@ -29,7 +29,7 @@ const AllBooksPage = async () => {
                 </aside>
                 <main className="flex-1">
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
-                        {books.map(book => (
+                        {filteredBooks.map(book => (
                             <BookCard key={book.id} book={book} />
                         ))}
                     </div>
