@@ -48,10 +48,13 @@ const Navbar = () => {
                                 className='btn btn-error'>
                                 Logout
                             </button>
-                            <img
+                            {user?.image
+                            ? <img
                                 src={user?.image}
                                 style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }}
-                            />
+                            /> :
+                             <p>{user?.email[0].toUpperCase()}</p>
+                        }
                         </div>
                     )}
                     <button className='md:hidden text-2xl' onClick={() => setIsOpen(!isOpen)}>
@@ -85,11 +88,13 @@ const Navbar = () => {
                                     className='btn btn-error btn-sm'>
                                     Logout
                                 </button>
-                                <img
-                                    src={user?.image}
-                                    alt="avatar"
-                                    style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }}
-                                />
+                                {user?.image
+                            ? <img
+                                src={user?.image}
+                                style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }}
+                            /> :
+                             <p>{user?.email[0].toUpperCase()}</p>
+                        }
                             </div>
                         )}
                     </div>

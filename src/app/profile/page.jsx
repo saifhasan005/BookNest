@@ -5,6 +5,7 @@ import { authClient } from "../lib/auth-client";
 const ProfilePage = () => {
     const userData = authClient.useSession();
     const user = userData.data?.user;
+    
     const [isOpen, setIsOpen] = useState(false);
     const [name, setName] = useState(user?.name || '');
     const [image, setImage] = useState(user?.image || '');
@@ -19,9 +20,8 @@ const ProfilePage = () => {
             <div className="max-w-96 mx-auto flex flex-col items-center mt-[45px] shadow p-6 border border-gray-300 rounded-2xl">
                 {user?.image
                     ? <img src={user.image} style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover' }} />
-                    : <div style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: '#3b82f6', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '32px' }}>
-                        {user?.email[0].toUpperCase()}
-                    </div>
+                    : 
+                        <p>{user?.email[0].toUpperCase()}</p>
                 }
                 <p className="text-xl font-semibold mt-[10px]">{user?.name}</p>
                 <p className="text-gray-500 text-sm">{user?.email}</p>
