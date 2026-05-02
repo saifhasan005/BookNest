@@ -10,7 +10,7 @@ const RegisterPage = () => {
     e.preventDefault();
     const name = e.target.name.value;
     const email = e.target.email.value;
-    const image = e.target.photo.value;
+    const image = e.target.photo.value || `https://ui-avatars.com/api/?name=${email[0]}&background=random`
     const password = e.target.password.value;
     const {data, error} = await authClient.signUp.email({
       email,
@@ -19,7 +19,8 @@ const RegisterPage = () => {
       image,
     });
       if (data) {
-        toast.success("Registration Successful")
+        toast.success("Registration Successful");
+        await authClient.signOut();
       router.push('/login');
     } else {
       toast.error("Registration Failed, Try Again");

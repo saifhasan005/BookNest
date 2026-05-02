@@ -2,8 +2,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { authClient } from '../lib/auth-client';
 
 const Navbar = () => {
+    const userData = authClient.useSession();
+    const user = userData.data?.user;
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div className='shadow sticky bg-white top-0 z-50'>
-            <div className='p-5 ontainer mx-auto mt-[15px] px-4'>
+            <div className='p-5 container mx-auto px-4'>
                 <div className='flex justify-between items-center'>
                     <Link href={'/'}>
                         <p className="text-blue-500 font-bold text-3xl">BookNest</p>
@@ -28,14 +31,29 @@ const Navbar = () => {
                             </Link>
                         ))}
                     </ul>
-                    <div className='hidden md:flex text-lg font-medium gap-3'>
-                        <Link href={'/register'}>
-                            <button className='btn btn-primary'>Register</button>
-                        </Link>
-                        <Link href={'/login'}>
-                            <button className='btn'>Login</button>
-                        </Link>
-                    </div>
+                    {!user && (
+                        <div className='hidden md:flex text-lg font-medium gap-3'>
+                            <Link href={'/register'}>
+                                <button className='btn btn-primary'>Register</button>
+                            </Link>
+                            <Link href={'/login'}>
+                                <button className='btn'>Login</button>
+                            </Link>
+                        </div>
+                    )}
+                    {user && (
+                        <div className='hidden md:flex items-center gap-3'>
+                            <button
+                                onClick={() => authClient.signOut()}
+                                className='btn btn-error'>
+                                Logout
+                            </button>
+                            <img
+                                src={user?.image}
+                                style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }}
+                            />
+                        </div>
+                    )}
                     <button className='md:hidden text-2xl' onClick={() => setIsOpen(!isOpen)}>
                         {isOpen ? '✕' : '☰'}
                     </button>
@@ -49,14 +67,31 @@ const Navbar = () => {
                                 {link.label}
                             </Link>
                         ))}
-                        <div className='flex gap-3 mt-2'>
-                            <Link href={'/register'}>
-                                <button className='btn btn-primary'>Register</button>
-                            </Link>
-                            <Link href={'/login'}>
-                                <button className='btn'>Login</button>
-                            </Link>
-                        </div>
+                        {!user && (
+                            <div className='flex gap-3 mt-2'>
+                                <Link href={'/register'}>
+                                    <button className='btn btn-primary'>Register</button>
+                                </Link>
+                                <Link href={'/login'}>
+                                    <button className='btn'>Login</button>
+                                </Link>
+                            </div>
+                        )}
+
+                        {user && (
+                            <div className='flex items-center gap-3 mt-2'>
+                                <button
+                                    onClick={() => authClient.signOut()}
+                                    className='btn btn-error btn-sm'>
+                                    Logout
+                                </button>
+                                <img
+                                    src={user?.image}
+                                    alt="avatar"
+                                    style={{ width: '40px', height: '40px', borderRadius: '50%', objectFit: 'cover' }}
+                                />
+                            </div>
+                        )}
                     </div>
                 )}
             </div>
