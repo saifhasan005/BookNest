@@ -7,26 +7,19 @@ const Footer = () => {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
                     <div className='col-span-1 sm:col-span-2 lg:col-span-1'>
                         <h2 className='text-2xl font-bold text-white mb-3'>📚 BookNest</h2>
-                        <p className='text-sm text-gray-400 leading-relaxed'>
-                            Your cozy corner for discovering, collecting, and buying the books you love.
-                        </p>
+                        <p className='text-sm text-gray-400 leading-relaxed'>Your cozy corner for discovering, collecting, and buying the books you love.</p>
                     </div>
 
                     <div>
-                        <h3 className='text-white font-semibold mb-4 text-sm uppercase tracking-wider'>
-                            Quick Links
-                        </h3>
+                        <h3 className='text-white font-semibold mb-4 text-sm uppercase tracking-wider'>Quick Links</h3>
                         <ul className='space-y-2 text-sm'>
                             <li><Link href='/' className='hover:text-white transition-colors'>Home</Link></li>
                             <li><Link href='/all-books' className='hover:text-white transition-colors'>All Books</Link></li>
                             <li><Link href='/my-profile' className='hover:text-white transition-colors'>My Profile</Link></li>
                         </ul>
                     </div>
-
                     <div>
-                        <h3 className='text-white font-semibold mb-4 text-sm uppercase tracking-wider'>
-                            Categories
-                        </h3>
+                        <h3 className='text-white font-semibold mb-4 text-sm uppercase tracking-wider'>Categories</h3>
                         <ul className='space-y-2 text-sm'>
                             <li><span className='hover:text-white transition-colors cursor-pointer'>Fiction</span></li>
                             <li><span className='hover:text-white transition-colors cursor-pointer'>Classic</span></li>
@@ -35,11 +28,8 @@ const Footer = () => {
                             <li><span className='hover:text-white transition-colors cursor-pointer'>Fantasy</span></li>
                         </ul>
                     </div>
-
                     <div>
-                        <h3 className='text-white font-semibold mb-4 text-sm uppercase tracking-wider'>
-                            Contact
-                        </h3>
+                        <h3 className='text-white font-semibold mb-4 text-sm uppercase tracking-wider'>Contact</h3>
                         <ul className='space-y-2 text-sm'>
                             <li className='flex items-center gap-2'>
                                 📧 <span>support@booknest.com</span>
