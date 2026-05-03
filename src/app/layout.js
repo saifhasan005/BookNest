@@ -15,6 +15,9 @@ const OutfitFont = Outfit({
 export const metadata = {
   title: "BookNest",
   description: "BookNest is a online book store",
+  icons: {
+        icon: "/logo.png",
+    },
 };
 
 export default function RootLayout({ children }) {

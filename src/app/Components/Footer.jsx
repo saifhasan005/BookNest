@@ -53,7 +53,6 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div className='border-t border-gray-700'>

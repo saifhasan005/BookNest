@@ -7,6 +7,9 @@ const CategorySidebar = async () => {
   const category = await response.json();
   return (
     <div className="flex flex-wrap gap-2 mb-6">
+      <Link href="/all-books">
+        <button className='btn btn-info w-[130px]'>All</button>
+      </Link>
       {category.map(singleCategory => (
         <Link key={singleCategory.id} href={`?category=${singleCategory.name.toLowerCase()}`}><button 
           className='btn btn-info w-[130px]' >
