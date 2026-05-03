@@ -57,4 +57,4 @@ This project is for educational purposes.
  
 ## 🙌 Author
  
-Made with ❤️ using Next.js and Tailwind CSS.
+Made By Rafiuzzaman Saif using Next.js and Tailwind CSS.
