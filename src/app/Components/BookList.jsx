@@ -20,9 +20,14 @@ const BooksList = ({ books }) => {
                     onChange={(e) => setSearch(e.target.value)}/>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
-                {filteredBooks.map(book => (
+                {filteredBooks.length == 0 ?
+                <p className="text-gray-500 text-lg col-span-4">No books found for {search}</p>
+                :    
+            
+                filteredBooks.map(book => (
                     <BookCard key={book.id} book={book} />
-                ))}
+                ))
+            }
             </div>
         </div>
     )
